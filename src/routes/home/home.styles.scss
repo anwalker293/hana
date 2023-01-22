@@ -141,3 +141,49 @@
 .top-order-now:hover {
   margin-top: -0.4%;
 }
+
+// Images
+.img-icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  transition: all 0.4s ease-in-out;
+  transform-origin: left;
+}
+
+.menu-img {
+  top: 38.8%;
+  left: 50.3%;
+
+  width: 40px;
+  height: 43px;
+}
+
+.locations-img {
+  top: 38.8%;
+  left: 69.68%;
+
+  width: 35px;
+  height: 45px;
+}
+
+.order-img {
+  top: 70.6%;
+  left: 50.35%;
+
+  width: 40px;
+  height: 54px;
+}
+
+.contact-img {
+  top: 70.6%;
+  left: 69.7%;
+
+  width: 32px;
+  height: 46px;
+}
+
+.img-icon:hover {
+  margin-top: -0.3%;
+}
