@@ -1,0 +1,143 @@
+.outer-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background-img {
+  top: -100px;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  margin-top: -6%;
+}
+
+// Preloader //
+#preloader {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+// Buttons //
+.btn {
+  width: 125px;
+  height: 32px;
+  background: rgba(251, 225, 175, 0.38);
+  opacity: 0.34;
+  border: 2px solid #fbe1af;
+  border-radius: 90px;
+  font-family: "Questrial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* identical to box height */
+  text-align: center;
+  cursor: pointer;
+  color: #3e3119;
+
+  // Transition
+  transition: all 0.4s ease-in-out;
+  transform-origin: left;
+}
+
+// Positions //
+// Top //
+.top-menu {
+  position: absolute;
+  top: 24.7%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+
+  // Overwrite button width, height//
+  width: 164px;
+  height: 41px;
+
+  background: rgba(251, 225, 175, 0.4);
+  opacity: 0.38;
+  border: 2px solid #fbe1af;
+  border-radius: 90px;
+
+  // Menu //
+  font-size: 18px;
+  line-height: 19px;
+  color: #1e1e1e;
+}
+
+.top-order-now {
+  position: absolute;
+  top: 24.7%;
+  left: 47.95%;
+  transform: translate(-50%, -50%);
+
+  background: #fbe1af;
+  border: 2px solid #fbe1af;
+  border-radius: 90px;
+
+  // Overwrite button width, height
+  width: 207px;
+  height: 39px;
+
+  // Order now
+  font-size: 18px;
+  line-height: 19px;
+
+  color: #1e1e1e;
+}
+
+// Bottom //
+.menu {
+  position: absolute;
+  top: 56%;
+  left: 50.55%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 19px;
+}
+
+.locations {
+  position: absolute;
+  top: 56%;
+  left: 69.5%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 19px;
+}
+
+.order {
+  position: absolute;
+  top: 88.5%;
+  left: 50.55%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 19px;
+}
+
+.contact {
+  position: absolute;
+  top: 88.5%;
+  left: 69.5%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 19px;
+}
+
+// Hovers
+
+.btn:hover {
+  background-color: #b99e69;
+  opacity: 1;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 1);
+  text-shadow: 0.2px 0.2px 0.2px #427388;
+}
+
+.top-menu:hover {
+  margin-top: -0.4%;
+}
+
+.top-order-now:hover {
+  margin-top: -0.4%;
+}
