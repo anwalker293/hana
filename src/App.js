@@ -12,8 +12,8 @@ const MainComponent = () => {
       style={{
         height: "100vh",
         width: "100%",
-        position: "relative",
-        zIndex: 1, // set the z-index to a lower value than the parallax components
+        position: "fixed",
+        zIndex: 1, // set the z-index to a higher value than the Parallax components
       }}
     >
       <Home />
@@ -23,7 +23,7 @@ const MainComponent = () => {
 
 const ParallaxComponent = ({ speed, zIndex }) => {
   return (
-    <ParallaxLayer speed={speed} offset={0.7} style={{ zIndex }}>
+    <ParallaxLayer speed={speed} offset={1} style={{ zIndex: 2 }}>
       <div>
         <Locations />
       </div>
@@ -40,19 +40,6 @@ const App = () => {
         position: "relative",
       }}
     >
-      <Parallax
-        pages={3}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          height: "100%",
-          width: "100%",
-          zIndex: 2,
-        }}
-      >
-        <ParallaxComponent speed={0.5} zIndex={3} />
-      </Parallax>
       <MainComponent />
     </div>
   );
