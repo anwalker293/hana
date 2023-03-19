@@ -3,14 +3,14 @@
 }
 
 html {
-  overflow: hidden;
   height: 100%;
 }
 
 body {
-  overflow: hidden;
-  height: 100%;
   background-color: #120a02;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -37,6 +37,16 @@ body {
 
 .App-link {
   color: #61dafb;
+}
+
+.main-component {
+  /* enable pointer events on main component */
+  pointer-events: auto;
+}
+
+.parallax-component {
+  /* disable pointer events on parallax components */
+  pointer-events: none;
 }
 
 @keyframes App-logo-spin {
