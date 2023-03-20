@@ -10,7 +10,6 @@ body {
   background-color: #120a02;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .App-logo {
@@ -47,6 +46,7 @@ body {
 .parallax-component {
   /* disable pointer events on parallax components */
   pointer-events: none;
+  position: fixed;
 }
 
 @keyframes App-logo-spin {

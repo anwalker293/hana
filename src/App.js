@@ -23,7 +23,7 @@ const MainComponent = () => {
 
 const ParallaxComponent = ({ speed, zIndex }) => {
   return (
-    <ParallaxLayer speed={speed} offset={0.7} style={{ zIndex }}>
+    <ParallaxLayer speed={speed} offset={1} style={{ zIndex }}>
       <div>
         <Locations />
       </div>
@@ -49,6 +49,8 @@ const App = () => {
           height: "100%",
           width: "100%",
           zIndex: 2,
+          pointerEvents: "none",
+          overflow: "scroll",
         }}
       >
         <ParallaxComponent speed={0.5} zIndex={3} />
